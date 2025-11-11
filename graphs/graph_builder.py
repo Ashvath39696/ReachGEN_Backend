@@ -6,7 +6,7 @@ LangGraph pipeline for the Input Enhancer Agent.
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-from agents.Input_Enhancer import EnhancerState, generate_queries_and_domains
+from agents.input_enhancer import EnhancerState, generate_queries_and_domains
 
 
 class EnhancerGraph:

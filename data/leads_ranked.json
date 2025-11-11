@@ -1,0 +1,37 @@
+{
+  "high_priority": [
+    {
+      "company_name": "Rad AI",
+      "website": "https://www.radai.com/",
+      "reason": "They utilize AI software to streamline workflows, indicating a need for workflow optimization solutions."
+    },
+    {
+      "company_name": "Cflow",
+      "website": "https://www.cflowapps.com/business-process-integration-bpi/",
+      "reason": "They focus on business process integration, which aligns well with the capabilities of your AI Workflow Optimizer."
+    },
+    {
+      "company_name": "Integrate",
+      "website": "https://www.integrate.com/blog/what-is-lead-routing",
+      "reason": "They emphasize AI-powered lead routing tools, suggesting a strong interest in automation solutions."
+    }
+  ],
+  "medium_priority": [
+    {
+      "company_name": "Microsoft Copilot",
+      "website": "https://www.microsoft.com/en-us/microsoft-copilot",
+      "reason": "They are developing tools for multi-agent orchestration, which could benefit from enhanced workflow automation."
+    },
+    {
+      "company_name": "Talkdesk",
+      "website": "https://www.talkdesk.com/blog/multi-agent-orchestration/",
+      "reason": "They focus on multi-agent orchestration, indicating a potential need for advanced workflow solutions."
+    },
+    {
+      "company_name": "Domo",
+      "website": "https://www.domo.com/glossary/ai-agent-orchestration",
+      "reason": "They are exploring AI agent orchestration, which aligns with your product's capabilities."
+    }
+  ],
+  "low_priority": []
+}

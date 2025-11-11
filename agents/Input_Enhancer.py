@@ -10,11 +10,6 @@ Standalone LangGraph + OpenAI agent that:
 """
 
 from typing import TypedDict, Annotated, List, Optional
-from langgraph.graph import StateGraph, START, END
-from langgraph.prebuilt import ToolNode
-from langgraph.checkpoint.memory import MemorySaver
-
-from langchain_openai import ChatOpenAI
 
 from config.llm_client import LLMClient
 from utils.parser import InputEnhancerParser
@@ -22,6 +17,10 @@ from utils.parser import InputEnhancerParser
 from dotenv import load_dotenv
 load_dotenv()
 import os
+
+import pathlib
+ROOT_DIR = pathlib.Path(__file__).resolve().parents[1]  # points to D:\my_marai
+PROMPT_PATH = ROOT_DIR / "prompts" / "input_enhancer.txt"
 
 # -----------------------------
 # 1. Configure Environment
@@ -46,7 +45,7 @@ class EnhancerState(TypedDict):
 # -----------------------------
 def generate_queries_and_domains(state: EnhancerState):
 
-    with open("prompts/input_enhancer.txt", "r", encoding="utf-8") as f:
+    with open(PROMPT_PATH, "r", encoding="utf-8") as f:
         template = f.read()
 
 
