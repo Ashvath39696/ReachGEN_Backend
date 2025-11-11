@@ -1,0 +1,37 @@
+{
+  "high_priority": [
+    {
+      "company_name": "Rad AI",
+      "website": "https://www.radai.com/",
+      "reason": "They utilize AI to streamline workflows in healthcare, aligning with the need for workflow optimization solutions."
+    },
+    {
+      "company_name": "IBM",
+      "website": "https://www.ibm.com/think/topics/ai-in-erp",
+      "reason": "IBM integrates AI in ERP systems, making them a prime candidate for AI workflow optimization tools."
+    },
+    {
+      "company_name": "Microsoft Dynamics 365",
+      "website": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/03/04/ai-in-crm-and-erp-systems-2024-trends-innovations-and-best-practices/",
+      "reason": "They focus on AI in CRM and ERP systems, indicating a strong need for workflow automation solutions."
+    }
+  ],
+  "medium_priority": [
+    {
+      "company_name": "Ultra Consultants",
+      "website": "https://ultraconsultants.com/erp-software-blog/ai-in-erp-systems-boosts-efficiency/",
+      "reason": "They consult on AI integration in ERP, indicating potential interest in workflow optimization tools."
+    },
+    {
+      "company_name": "SuperOffice",
+      "website": "https://www.superoffice.com/news/insights/crm-and-erp-integration/",
+      "reason": "They emphasize CRM and ERP integration, which aligns with your product's capabilities."
+    },
+    {
+      "company_name": "Citrin Cooperman",
+      "website": "https://www.citrincooperman.com/In-Focus-Resource-Center/AI-Powered-CRM-and-ERP-are-Redefining-Business-Strategies-in-2024",
+      "reason": "They highlight the need for AI-powered CRM and ERP solutions, showing potential interest in automation."
+    }
+  ],
+  "low_priority": []
+}
