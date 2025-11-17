@@ -1,37 +1,53 @@
 {
   "high_priority": [
     {
-      "company_name": "Rad AI",
-      "website": "https://www.radai.com/",
-      "reason": "They utilize AI to streamline workflows in healthcare, aligning with the need for workflow optimization solutions."
-    },
-    {
-      "company_name": "IBM",
-      "website": "https://www.ibm.com/think/topics/ai-in-erp",
-      "reason": "IBM integrates AI in ERP systems, making them a prime candidate for AI workflow optimization tools."
+      "company_name": "SAP",
+      "website": "https://www.sap.com/index.html",
+      "reason": "They offer cloud ERP solutions and are actively integrating AI, making them a prime candidate for workflow optimization."
     },
     {
       "company_name": "Microsoft Dynamics 365",
-      "website": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2024/03/04/ai-in-crm-and-erp-systems-2024-trends-innovations-and-best-practices/",
-      "reason": "They focus on AI in CRM and ERP systems, indicating a strong need for workflow automation solutions."
+      "website": "https://www.microsoft.com/en-us/dynamics-365",
+      "reason": "They provide AI-powered CRM and ERP solutions, which could greatly benefit from workflow automation."
+    },
+    {
+      "company_name": "NetSuite",
+      "website": "https://www.netsuite.com",
+      "reason": "NetSuite is focused on enhancing ERP systems with AI, indicating a need for workflow optimization tools."
     }
   ],
   "medium_priority": [
     {
-      "company_name": "Ultra Consultants",
-      "website": "https://ultraconsultants.com/erp-software-blog/ai-in-erp-systems-boosts-efficiency/",
-      "reason": "They consult on AI integration in ERP, indicating potential interest in workflow optimization tools."
-    },
-    {
-      "company_name": "SuperOffice",
-      "website": "https://www.superoffice.com/news/insights/crm-and-erp-integration/",
-      "reason": "They emphasize CRM and ERP integration, which aligns with your product's capabilities."
+      "company_name": "Worknet AI",
+      "website": "https://www.worknet.ai",
+      "reason": "They are focused on AI workflow automation, which aligns well with the product offering."
     },
     {
       "company_name": "Citrin Cooperman",
-      "website": "https://www.citrincooperman.com/In-Focus-Resource-Center/AI-Powered-CRM-and-ERP-are-Redefining-Business-Strategies-in-2024",
-      "reason": "They highlight the need for AI-powered CRM and ERP solutions, showing potential interest in automation."
+      "website": "https://www.citrincooperman.com",
+      "reason": "They are exploring AI integration in CRM and ERP, suggesting a need for enhanced workflow solutions."
+    },
+    {
+      "company_name": "Microsoft Power Automate",
+      "website": "https://tei.forrester.com/go/microsoft/powerautomatetei/index.html",
+      "reason": "They enable organizations to streamline repetitive tasks, indicating a market for additional workflow automation."
     }
   ],
-  "low_priority": []
+  "low_priority": [
+    {
+      "company_name": "Rad AI",
+      "website": "https://www.radai.com/",
+      "reason": "They focus on AI for radiology workflows, which may not align with broader business process automation needs."
+    },
+    {
+      "company_name": "Relevance AI",
+      "website": "https://www.relevance.ai",
+      "reason": "While they provide AI solutions, their focus may not directly overlap with workflow automation for CRM/ERP."
+    },
+    {
+      "company_name": "Zidy's AI",
+      "website": "https://www.zidy.com",
+      "reason": "They provide AI solutions for task automation but may not be in the market for comprehensive workflow optimization."
+    }
+  ]
 }

@@ -72,7 +72,7 @@ async def node_google_scraper(state: LeadPipelineState) -> LeadPipelineState:
         print("⚠️ No search queries found. Skipping Google Scraper.")
         return state
 
-    from utils.google_scraper import run_cse_scraper
+    #from utils.google_scraper import run_cse_scraper
     results = run_cse_scraper(queries, results_per_query=5)
     state["scraped_leads"] = results
 

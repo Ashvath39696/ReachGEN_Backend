@@ -11,6 +11,16 @@ Example:
 """
 
 import json
+from supabase import create_client
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_TABLE = "evaluation_runs"
+
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
 class BaseParser:
@@ -67,20 +77,37 @@ class InputEnhancerParser(BaseParser):
 
 
 
-class LeadFinderParser(BaseParser):
-    """Parses the LLM output for ranked company results."""
+class LeadPipelineParser(BaseParser):
 
-    def parse(self, content: str):
-        parsed_output = self.safe_json_load(content)
-        if not parsed_output:
-            parsed_output = {
-                "high_priority": [],
-                "medium_priority": [],
-                "low_priority": []
-            }
+    def parse(self, pipeline_output: dict):
+        """Extract the 4 evaluation outputs from the pipeline result"""
+
+        result = pipeline_output.get("result", {})
+
         return {
-            "high_priority": parsed_output.get("high_priority", []),
-            "medium_priority": parsed_output.get("medium_priority", []),
-            "low_priority": parsed_output.get("low_priority", []),
-            "messages": [content],
+            "product_name": result.get("product_name"),
+            "description": result.get("description"),
+            "features": result.get("features", []),
+            "competitors": result.get("competitors", []),
+
+            "search_queries": result.get("search_queries", []),
+            "business_domains": result.get("business_domains", []),
+
+            "scraped_leads": result.get("scraped_leads", {}),
+            "ranked_leads": result.get("ranked_leads", {}),
         }
+
+    def save(self, row: dict):
+        """Insert into Supabase exactly like your Langfuse syncer"""
+        try:
+            response = (
+                supabase
+                .table(SUPABASE_TABLE)
+                .insert(row)
+                .execute()
+            )
+            print("🗄️ Saved evaluation row → Supabase")
+            return response
+        except Exception as e:
+            print("❌ Error saving evaluation row:", e)
+            return None
